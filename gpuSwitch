@@ -1,0 +1,27 @@
+#!/bin/bash
+[ "$UID" -eq 0 ] || exec sudo "$0" "$@"
+
+main_function()
+{
+userChoice
+clear
+echo "For ASUS TUF laptops with dGPU (supergfxctl is required for proper operation )"
+echo "Available modes:"
+supergfxctl -s
+echo -e "\nPick an option:\n\n1) Integrated\n2) Hybrid\n3) Asus Mux dGPU\n\n>\c"
+read userChoice
+clear
+
+case $userChoice in
+    "1") supergfxctl -m Integrated ;;
+    "2") supergfxctl -m Hybrid ;;
+    "3") supergfxctl -m AsusMuxDgpu;;
+    *) echo "No such option"
+esac
+
+sleep 3
+exit
+}
+
+main_function
+#based on 
