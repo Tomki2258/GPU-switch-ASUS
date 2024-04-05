@@ -4,7 +4,7 @@
 
 How to use script ? 
 + Step 1: Download it from this site\n
-+ Step 2: make the file executable by "sudo chmod +x ./gpuSwitch"
++ Step 2: make the file executable by **sudo chmod +x ./gpuSwitch**
 + Step 3: Run script and switch your gpu mode :)
 
 💻Tested with laptops💻
