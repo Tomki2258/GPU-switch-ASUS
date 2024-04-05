@@ -1,4 +1,4 @@
-## Easy script created to let users easily switch their GPU in ASUS laptops with dedicatedGPUs
+## Simple script created to let users easily switch their GPU in ASUS laptops with dedicatedGPUs
 
 **supergfxctl** packpage is required to use
 
